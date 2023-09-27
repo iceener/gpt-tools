@@ -1,0 +1,17 @@
+{
+  "name": "tools",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun src/app.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "langchain": "^0.0.154"
+  }
+}
