@@ -1,6 +1,6 @@
 export const getTasksSchema = {
     "name": "getTasks",
-    "description": "Get (unfinished) tasks from Todoist",
+    "description": "Only for listing (unfinished) tasks from Todoist",
     "parameters": {
         "type": "object",
         "properties": {}
@@ -69,11 +69,11 @@ export const updateTasksSchema = {
                         },
                         "content": {
                             "type": "string",
-                            "description": "Format: task description"
+                            "description": "Format: updated task description or a current task description if no update is needed"
                         },
                         "due_string": {
                             "type": "string",
-                            "description": "Natural language date user mentions, defaults to 'today' (examples: monday, monday at 5 pm etc.)"
+                            "description": "Natural language date user mentions, defaults to 'today' or a current due date if no update is needed (examples: monday, monday at 5 pm etc.)"
                         }
                     }
                 }
